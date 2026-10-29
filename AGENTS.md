@@ -4,7 +4,7 @@ Understand the requirements and existing code before changing files. Read [devel
 
 Prefer clean, maintainable, secure, production-quality code. Follow current stable ecosystem practices and existing project conventions. Avoid unnecessary dependencies and abstractions. Never expose secrets or credentials in source, logs, prompts, or reports; inspect presence rather than values.
 
-Write and run appropriate automated tests. Verify builds, linting, formatting, and type checking where applicable. Never claim a test passed unless it actually ran; report failures, skipped checks, and limitations. For this template, run `python3 scripts/verify-template.py` and `python3 -m unittest discover -s tests -v`. No application build exists yet.
+Write and run appropriate automated tests. Verify builds, linting, formatting, and type checking where applicable. Never claim a test passed unless it actually ran; report failures, skipped checks, and limitations. For SiteForge, run `cargo fmt --check`, `cargo clippy --locked --all-targets -- -D warnings`, `cargo test --locked`, and `cargo build --locked --release`. Also run `python3 scripts/verify-template.py` and `python3 -m unittest discover -s tests -v` for the retained template guidance. Fixture-server tests require local socket permissions.
 
 Work in a feature branch and prepare a pull request where supported and authorized. Never deploy, publish packages, delete production data, or change live credentials without explicit authorization. Preserve unrelated work. In managed cloud tasks, use the existing isolated checkout; do not create a Git worktree unless explicitly requested.
 

@@ -10,4 +10,4 @@ Run the relevant automated tests and applicable build, lint, format, and type ch
 
 Use a descriptive feature branch and a reviewable commit. PR descriptions explain the problem, resulting behavior, validation, and material limitations. Do not merge, deploy, publish, delete production data, or rotate live credentials without authorization. A request to create a PR is not authorization to merge it.
 
-This starter has no application dependencies or services. Its required checks are the template validator and validator tests in AGENTS.md. Add project-specific CI and commands when creating a real project; do not infer application readiness from template checks.
+SiteForge is a Cargo application with a committed lockfile and local HTTP fixture tests. Run the Rust and Python checks in AGENTS.md. No persistent services or credentials are required. Template checks validate retained guidance only; they do not establish application readiness.
