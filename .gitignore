@@ -1,0 +1,32 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+dist/
+build/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage/
+target/
+# Local artifacts
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+# Keep dependency lockfiles and shared agent instructions tracked.
